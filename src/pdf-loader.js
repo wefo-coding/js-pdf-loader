@@ -1,4 +1,4 @@
-﻿(function (global) {
+(function (global) {
 
     var pdfLinks = global.document.querySelectorAll("[data-download]");
     for (var i = 0; i < pdfLinks.length; i++) {

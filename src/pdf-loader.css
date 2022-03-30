@@ -1,0 +1,38 @@
+.pdf-load{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pdf-load-dialog{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);
+}
+
+.pdf-load .icon .loading {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #25b; /* Blue */
+  border-right: 6px solid #25b; /* Blue */
+  border-left: 6px solid #25b; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: pdf-load-spin 1500ms linear infinite;
+}
+
+@keyframes pdf-load-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

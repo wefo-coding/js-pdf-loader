@@ -7,6 +7,32 @@
     </head>
     <body>
         <a href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Test.pdf" download="Test.pdf" data-download="pdf">Load Test-PDF</a>
+        
+        <!-- DIALOG wird später im Script generiert. -->
+        
+        <div class="pdf-load">
+            <div class="pdf-load-dialog">
+                <div class="icon">
+                    <div class="loading"></div>
+                    <div class="done">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="60px" height="60px" fill="#2c3">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <p class="loading">Einen Moment... Ihr PDF wird generiert.</p>
+                    <p class="done">Ihr PDF steht jetzt zum Download zur verfügung.</p>
+                </div>
+                <div>
+                    <button class="done">Download</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ENDE DIALOG -->
+        
         <script src="src/pdf-loader.js"></script>
     </body>
 </html>
