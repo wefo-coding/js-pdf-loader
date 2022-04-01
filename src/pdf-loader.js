@@ -36,9 +36,12 @@
                         
                         a.onclick = function(){
                             setTimeout(closeDialog, 1000); // Theoretisch reicht 1 ms. Wichtig ist, dass closeDialog() erst ausgeführt wird, wenn das onclick event beendet bzw. der Download gestartet wurde.
-                        }
+                        };
                         
                         document.getElementById('pdf-cancel').onclick = closeDialog;
+                    }
+                    else{
+                        closeDialog();
                     }
                 };
                 xmlhttp.send();
