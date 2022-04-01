@@ -7,7 +7,7 @@
     bottom: 0;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    background-color: rgba(200, 200, 2, 0.4);
+    background-color: rgba(200, 200, 200, 0.4);
 }
 
 #pdf-load .done{
@@ -27,8 +27,7 @@
 }
 
 .pdf-load-dialog{
-    width: 300px;
-    height: 200px;
+    width: 350px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -39,6 +38,8 @@
     border: 1px solid #ccc;
     box-shadow: 1px 1px 8px 5px #ccc;
     text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 #pdf-load p{
@@ -46,7 +47,7 @@
 }
 
 #pdf-load .icon{
-    margin: 1em auto;
+    margin: auto;
     width: 60px;
     height: 60px;
 }
@@ -65,11 +66,11 @@
 #pdf-load a{
     display: inline-block;
     border: 1px solid #25b;
-    padding: .2em 2em;
+    padding: .2em 1em;
     background-color: #25b;
     color: #fff;
     text-decoration: none;
-    margin: 1em .5em;
+    margin: .25em .5em;
 }
 
 a#pdf-cancel,
