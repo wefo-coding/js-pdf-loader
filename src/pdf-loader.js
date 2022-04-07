@@ -35,7 +35,7 @@
                         a.download = isValidFileName(self.download) ? self.download : new Date().toLocaleString().replace(', ', '_').replace(/[^a-zA-Z0-9\_]/g, '-') + '.pdf';
                         
                         a.onclick = function(){
-                            setTimeout(closeDialog, 1000); // Theoretisch reicht 1 ms. Wichtig ist, dass closeDialog() erst ausgeführt wird, wenn das onclick event beendet bzw. der Download gestartet wurde.
+                            setTimeout(closeDialog, 100); // Theoretisch reicht 1 ms. Wichtig ist, dass closeDialog() erst ausgeführt wird, wenn das onclick event beendet bzw. der Download gestartet wurde.
                         };
                         
                         document.getElementById('pdf-cancel').onclick = closeDialog;
@@ -88,12 +88,12 @@
         
         var messageLoading = document.createElement('p');
         messageLoading.classList.add('loading');
-        messageLoading.innerHTML = "Einen Moment bitte...<br>Ihr PDF wird generiert.";
+        messageLoading.innerHTML = "Your PDF file is available for download soon.";
         message.appendChild(messageLoading);
         
         var messageDone = document.createElement('p');
         messageDone.classList.add('done');
-        messageDone.innerHTML = "Ihr PDF steht jetzt zum Download zur Verfügung.";
+        messageDone.innerHTML = "Your PDF file is now available for download.";
         message.appendChild(messageDone);
         
         var buttons = document.createElement('div');
